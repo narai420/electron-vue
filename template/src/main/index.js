@@ -11,7 +11,7 @@ import { app, BrowserWindow } from 'electron'{{#if_eq eslintConfig 'airbnb'}} //
 if (process.env.NODE_ENV !== 'development') {
   global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\'){{#if_eq eslintConfig 'airbnb'}} // eslint-disable-line{{/if_eq}}
 }
-
+//this is the index dot js
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
